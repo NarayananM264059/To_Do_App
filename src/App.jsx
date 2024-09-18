@@ -1,11 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import ToDoList from './components/ToDoList';
-import './App.css'; 
+import './App.css';
 
 function App() {
   // State to hold to-do items
   const [tasks, setTasks] = useState([]);
+
+  // Load tasks from Local Storage on component mount
+  useEffect(() => {
+    const storedTasks = localStorage.getItem('tasks');
+    if (storedTasks) {
+      setTasks(JSON.parse(storedTasks));
+    }
+  }, []);
+
+  // Save tasks to Local Storage whenever tasks change
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  }, [tasks]);
 
   // Function to add a new task
   const addTask = (taskText) => {
