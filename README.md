@@ -2,7 +2,7 @@
 
 ---
 
-# Unique To-Do App
+# To-Do App
 
 ![To-Do App Screenshot](./public/screenshot1.png)
 
