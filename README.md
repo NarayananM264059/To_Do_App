@@ -131,5 +131,5 @@ For any questions or suggestions, feel free to reach out:
 
 
 ![App Screenshot](./public/screenshot1.png)
-![App Screenshot](./public/screenshot3.png)
+![App Screenshot](./public/Screenshot3.png)
 
