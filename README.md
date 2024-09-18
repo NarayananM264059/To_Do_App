@@ -130,8 +130,6 @@ For any questions or suggestions, feel free to reach out:
 # Screenshots
 
 
-```markdown
 ![App Screenshot](./public/screenshot1.png)
 ![App Screenshot](./public/screenshot3.png)
 
-```
